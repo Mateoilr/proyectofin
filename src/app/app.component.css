@@ -1,0 +1,66 @@
+h1{
+  text-align: center;
+  color: #525a52;
+font-family: 'Roboto', sans-serif;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: repeat(14, 5fr);
+  grid-auto-rows: repeat(15, 5fr);
+  gap: 16px; /* Espacio entre tarjetas */
+  padding: 16px;
+}
+
+.product-card .item {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card .item:hover {
+  transform: translateY(-10px);
+}
+
+.product-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.product-card .info {
+  padding: 16px;
+}
+
+.product-card .info p {
+  margin: 8px 0;
+}
+
+.product-card .modelo {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.product-card .almacenamiento,
+.product-card .marca,
+.product-card .year {
+  color: #555;
+}
+
+button{
+  background-color: #525a52;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
